@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل زيارات</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+<link rel="stylesheet" href="./sweetalert2.min.css">
+
+   
+    </head>
+
+<body>
+
+    <div class="add-vist">
+        <div class="container">
+            <h1>تسجيل الزيارات</h1>
+            <form action="">
+                <div class="mb-3">
+                    <label for="" >اسم الزبون</label>
+                    <input class="inputs form-control " type="text"  id="customerName" placeholder="اسم الزبون">
+                </div>
+                <label for="">تاريخ الزيارة</label>
+                <input class="inputs form-control" type="date" id="dateVisit" placeholder="تاريخ الزيارة"><br>
+    
+                <label for="">مدة الزيارة</label>
+                <input class="inputs form-control" type="number"  id="timeVist" placeholder="مدة الزيارة" ><br>
+    
+                <label for="">ملخص الزيارة</label>
+                <textarea class="inputs form-control"  id="visitDescription" placeholder="ملخص الزيارة"></textarea>
+    
+                <input type="submit" value="اضافة زيارة" class="btn btn-outline-secondary mt-4 p-2 " id="click"  placeholder="اضافة زيارة" />
+                <input type="submit" value="تحديث الزيارة" class="btn btn-outline-info mt-4 p-2  " id="update"  placeholder="اضافة زيارة" />
+
+                <button class="btn btn-outline-secondary mt-4 p-2" type="reset">مسح</button>
+            </form>
+        </div>
+        <div class="container">
+            <input type="search" placeholder="ابحث هنا..." id="search" class="form-control my-3">
+
+            <table class="table table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>اسم الزبون</th>
+                        <th>تاريخ الزيارة</th>
+                        <th>وقت الزيارة</th>
+                        <th>ملخص الزيارة</th>
+                        <th>تعديل</th>
+                        <th>حذف</th>
+                    </tr>
+                </thead>
+                <button id="deleteBtn" class="btn btn-outline-danger text-center my-3">حذف الكل</button>
+                <tbody id="data">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- bootstrap js file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+        <!-- sweet alert -->
+         <script src="./sweetalert2.min.js"></script>
+    <!-- custom js file -->
+    <script src="./main.js"></script>
+</body>
+</html>
